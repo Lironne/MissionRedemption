@@ -1,7 +1,5 @@
-var dotEnv = require('dotenv');
 
-
-result = dotEnv().config();
+result = require('dotenv').config();
 
 if (result.error){
 	throw result.error 
