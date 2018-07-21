@@ -1,4 +1,5 @@
 var FitBitApiCLient = require("fitbit-node")
+var express = require('express')
 const app = express(); 
 
 
@@ -20,7 +21,7 @@ app.get("/callback", (req, res) => {
 		// use the access token to fetch the user's profile information
 		client.get("/profile.json", result.access_token).then(results => {
 			res.send(results[0]);
-		}).catch(err => {
+		}).catch(err => {ß
 			res.status(err.status).send(err);
 		});
 	}).catch(err => {
