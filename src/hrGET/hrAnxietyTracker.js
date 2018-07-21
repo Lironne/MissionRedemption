@@ -1,3 +1,7 @@
 var FitBitApiCLient = require("fitbit-node")
 
-new FitBitApiCLient({clientId: "", clientSecret:, apiVersion: "1.2"}∂)ßß
+
+// don't push to git 
+new FitBitApiCLient({clientId: process.env.clientId, clientSecret:process.env.clientId, apiVersion: "1.2"}) 
+
+getAuthorizeUrl()
