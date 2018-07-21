@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Lironne/MissionRedemption#readme",
   "dependencies": {
+    "dotenv": "^6.0.0",
     "fitbit-node": "^2.1.0"
   }
 }
