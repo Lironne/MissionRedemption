@@ -1,0 +1,24 @@
+{
+  "name": "mission-redemption",
+  "version": "1.0.0",
+  "description": "today is a good day",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lironne/MissionRedemption.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lironne/MissionRedemption/issues"
+  },
+  "homepage": "https://github.com/Lironne/MissionRedemption#readme",
+  "dependencies": {
+    "dotenv": "^6.0.0",
+    "fitbit-node": "^2.1.0",
+    "superagent": "^3.5.2"
+  }
+}
