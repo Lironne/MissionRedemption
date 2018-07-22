@@ -3,11 +3,9 @@ var express = require('express')
 var superagent = require('superagent');
 var result = require('dotenv').config();
 
-const app = express();
+const port = process.env.PORT || 3000;
 
-if (result.error) {
-    throw result.error
-}
+const app = express();
 
 console.log({
     clientId: process.env.clientId,
@@ -82,4 +80,4 @@ app.get("/userHomePage", (req, res) => {
 
 
 
-app.listen(3000);
+app.listen(port);
