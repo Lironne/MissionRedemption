@@ -48,10 +48,11 @@ app.get("/userHomePage", (req, res) => {
 	console.log(req.query.token)
     var accessToken = req.query.token;
     var data;    
-    client.get("/activities/heart/date/2018-06-30/1d/1min.json", req.query.token).then(results => {
-    	return res.send(results)
-    	console.log("in here")
-    	client.get("/activities/steps/date/2018-06-30/1d/1min.json",req.query.token).then(results => {
+    client.get("/activities/heart/date/2018-02-26/1d/5min.json", req.query.token).then(results => {
+    //	data["hr"] = results['activities-heart-intraday']
+    //	return res.send(results['activities-heart-intraday'])
+    //	console.log("in here")
+    	client.get("/activities/steps/date/2018-02-26/1d/5min.json",req.query.token).then(results => {
     	return res.send(results)
     	}).catch(err => {
      		console.log("hitting an error")
