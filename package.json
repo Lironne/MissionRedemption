@@ -2,14 +2,20 @@
   "name": "mission-redemption",
   "version": "1.0.0",
   "description": "today is a good day",
-  "main": "index.js",
+  "main": "src/hrGET/hrAnxietyTracker.js",
   "scripts": {
+    "start": "node src/hrGET/hrAnxietyTracker.js",
     "test": "test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Lironne/MissionRedemption.git"
   },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -17,6 +23,7 @@
   },
   "homepage": "https://github.com/Lironne/MissionRedemption#readme",
   "dependencies": {
+    "hrGET": "file:src/hrGET",
     "dotenv": "^6.0.0",
     "fitbit-node": "^2.1.0"
   }
