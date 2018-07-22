@@ -1,1 +1,1 @@
-web: node src/hrGET/hrAnxietyTracker.js
+web: node hrAnxietyTracker.js
